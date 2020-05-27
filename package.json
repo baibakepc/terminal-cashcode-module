@@ -1,0 +1,44 @@
+{
+  "name": "eboxcashcode",
+  "version": "1.0.1",
+  "scripts": {
+    "install": "node-pre-gyp install --fallback-to-build",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "baibakepc",
+  "license": "ISC",
+  "gypfile": true,
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "bugs": {
+    "url": "https://github.com/baibakepc/terminal-cashcode-module/issues"
+  },
+  "homepage": "https://github.com/baibakepc/terminal-cashcode-module#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baibakepc/terminal-cashcode-module.git"
+  },
+  "binary": {
+    "module_name": "cashcode",
+    "module_path": "./lib/binding/{configuration}/{node_abi}-{platform}-{arch}/",
+    "package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}.tar.gz",
+    "host": "https://github.com/baibakepc/terminal-cashcode-module/releases/download/",
+    "remote_path": "{version}"
+  },
+  "dependencies": {
+    "node-pre-gyp": "^0.11.0",
+    "node-gyp": "3.x"
+  },
+  "peerDependencies": {
+    "node-gyp": "3.x"
+  },
+  "peerDependenciesMeta": {
+    "node-gyp": {
+      "optional": true
+    }
+  },
+  "optionalDependencies": {
+    "node-gyp": "3.x"
+  },
+  "main": "./lib/cashcode"
+}
